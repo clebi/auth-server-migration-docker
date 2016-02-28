@@ -7,6 +7,4 @@ RUN git clone --branch 0.0.1 https://github.com/clebi/auth-server.git /usr/src/a
 WORKDIR /usr/src/app
 RUN npm install
 
-EXPOSE 3000
-
 CMD ["./node_modules/.bin/sequelize", "db:migrate", "--conf", "/etc/app/conf.yaml"]
